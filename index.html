@@ -3,16 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="A beginner-friendly introduction to HTML and web development."
+        content="A beginner-friendly introduction to HTML, CSS and web development."
     >
 
     <title>Web Development | HTML Foundations</title>
 
-    <!-- Connects this HTML file to style.css -->
+    <!-- Connect the HTML file to the CSS file -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -26,6 +30,10 @@
             <ul class="nav-links">
                 <li>
                     <a href="#learn">What you will learn</a>
+                </li>
+
+                <li>
+                    <a href="#selectors">CSS selectors</a>
                 </li>
 
                 <li>
@@ -82,7 +90,7 @@
             </figure>
         </section>
 
-        <!-- Learning section -->
+        <!-- HTML learning section -->
         <section class="section" id="learn">
             <div class="container">
                 <div class="section-heading">
@@ -133,6 +141,36 @@
             </div>
         </section>
 
+        <!-- CSS selector section -->
+        <section class="section selector-section" id="selectors">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">CSS fundamentals</p>
+
+                    <h2>Understanding CSS selectors</h2>
+
+                    <p>
+                        CSS selectors tell the browser which HTML elements
+                        should receive particular styles.
+                    </p>
+                </div>
+
+                <div class="selector-examples">
+                    <!-- This paragraph uses a reusable class -->
+                    <p class="info-text">
+                        A class selector can be reused on several HTML
+                        elements. Class selectors begin with a dot in CSS.
+                    </p>
+
+                    <!-- This paragraph uses the same class and one unique ID -->
+                    <p class="info-text" id="important-notice">
+                        Important: An ID should only be used once on a webpage.
+                        ID selectors begin with a hash symbol in CSS.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- Code example section -->
         <section class="section" id="example">
             <div class="container">
@@ -153,7 +191,7 @@
 
     <footer>
         <div class="container">
-            Made while learning HTML and web development.
+            Made while learning HTML, CSS and web development.
         </div>
     </footer>
 </body>
